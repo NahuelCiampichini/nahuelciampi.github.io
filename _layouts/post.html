@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      {% if page.author %} · {{ page.author }}{% endif %}
+      {% if page.categories.size > 0 %}
+        ·
+        {% for category in page.categories %}
+          <span class="category-tag">{{ category }}</span>
+        {% endfor %}
+      {% endif %}
+      {% if page.read_time %}
+        · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read
+      {% endif %}
+    </p>
+  </header>
+
+  {% if page.image %}
+    <div class="post-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div class="post-footer">
+    {% if page.tags.size > 0 %}
+      <p class="post-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    <div class="post-navigation">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" class="btn">← {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" class="btn" style="float:right">{{ page.next.title }} →</a>
+      {% endif %}
+    </div>
+
+    <p><a href="{{ '/blog' | relative_url }}">← Back to Blog</a></p>
+  </div>
+</article>

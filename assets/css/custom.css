@@ -1,0 +1,219 @@
+/* ============================================
+   Custom CSS — Midnight Theme Overrides
+   ============================================ */
+
+/* ── Navigation ── */
+.site-nav {
+  margin: 1.5rem 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav ul li {
+  margin: 0.4rem 0;
+}
+
+.site-nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ── Author Info in Sidebar ── */
+.author-info {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 1rem;
+}
+
+.author-info a {
+  color: #aaa;
+}
+
+/* ── Post List ── */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.post-list h3 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.post-list h3 a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.post-list h3 a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.post-list p {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  font-size: 0.85rem;
+  color: #7c9cbf;
+}
+
+/* ── Category & Tag Badges ── */
+.category-tag,
+.tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin: 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-tags {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ── Post Article ── */
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.post-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-image {
+  margin: 1.5rem 0;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+.post-content h2 {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.post-content pre {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.post-content code {
+  background: rgba(0,0,0,0.3);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ── Post Navigation ── */
+.post-navigation {
+  margin: 2rem 0 1rem;
+  overflow: hidden;
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ── Button ── */
+.btn {
+  display: inline-block;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  padding: 0.5rem 1rem;
+  background: rgba(255,255,255,0.1);
+  color: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ── Footer ── */
+footer {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #999;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .post-title {
+    font-size: 1.4rem;
+  }
+
+  .post-navigation .btn {
+    display: block;
+    float: none !important;
+    margin: 0.4rem 0;
+  }
+}
